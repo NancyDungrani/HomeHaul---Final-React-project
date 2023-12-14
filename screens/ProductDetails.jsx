@@ -35,15 +35,15 @@ const ProductDetails = ({navigation}) => {
         </View>
 
         <Image 
-        source={{uri : item.imageUrl}}
+        source={{uri : "https://www.purbafurniture.ca/wp-content/uploads/2022/05/Luxury-bedroom.png"}}
         style = {styles.image}
          />
 
          <View style={styles.details} >
             <View style={styles.titleRow} >
-                <Text style={styles.title}>{item.title}</Text>
+                <Text style={styles.title}>Product Title</Text>
                 <View style={styles.priceWrapper}>
-                    <Text style={styles.price}>{item.price}</Text>
+                    <Text style={styles.price}>250$</Text>
 
 
                 </View>
@@ -69,7 +69,7 @@ const ProductDetails = ({navigation}) => {
                         name='plus' size={20} />
                     </TouchableOpacity>
 
-                <Text style={styles.ratingText}>  {count}  </Text>
+                <Text style={styles.ratingText}>  5  </Text>
 
                 <TouchableOpacity onPress={()=>decrement()}>
                         <SimpleLineIcons
@@ -82,7 +82,7 @@ const ProductDetails = ({navigation}) => {
             <View style={styles.descriptionWrapper}>
                 <Text style={styles.description}>Description</Text>
                 <Text style={styles.descText}>
-                {item.description}
+                "On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One gravity son brought shyness waiting regular led ham"
 
                 </Text>
 
@@ -91,7 +91,7 @@ const ProductDetails = ({navigation}) => {
                 <View style={styles.location}>
                     <View style={{flexDirection:"row"}}>
                     <Ionicons name='location-outline' size={20}/>
-                    <Text>  {item.product_location}  </Text>
+                    <Text> Barrie, Ontario  </Text>
                     </View>
 
                     <View style={{flexDirection:"row"}}>

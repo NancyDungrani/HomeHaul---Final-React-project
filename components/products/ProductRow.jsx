@@ -10,20 +10,20 @@ const ProductRow = () => {
     const products =[1,2,3,4]
   return (
   <View style={styles.container}>
-    {isLoading ? (
+    {/* {isLoading ? (
       <ActivityIndicator size={SIZES.xxLarge} color={COLORS.primary}/>
     ): error ? (
       <Text> Something went wrong</Text>
-    ):(
+    ):( */}
       <FlatList
-        data = {data}
-        keyExtractor ={(item) => item._id}
-        renderItem={({item})=><ProductCardView item ={item}/>}
+        data = {products}
+        //keyExtractor ={(item) => item._id}
+        renderItem={({item})=><ProductCardView/>}
         horizontal
         contentContainerStyle={{columnGap:SIZES.columnGap}}
   
   />
-    )}
+    {/* )} */}
   </View>
   )
 }

@@ -12,15 +12,15 @@ const ProductCardView = ({item}) => {
         <View style={styles.container}>
             <View style={styles.imageContainers}>
                 <Image
-                source={{uri : item.imageUrl}}
+                source={{uri : "https://www.purbafurniture.ca/wp-content/uploads/2022/05/Luxury-bedroom.png"}}
                 style = {styles.image}
                 />
 
             </View>
             <View style={styles.details}>
-                <Text style={styles.title} numberOfLines={1}>{item.title}</Text>
-                <Text style={styles.supplier} numberOfLines={1}> {item.supplier} </Text>
-                <Text style={styles.price}>{item.price}</Text>
+                <Text style={styles.title} numberOfLines={1}>Product Title</Text>
+                <Text style={styles.supplier} numberOfLines={1}>Supplier</Text>
+                <Text style={styles.price}>250$</Text>
 
             </View>
 
