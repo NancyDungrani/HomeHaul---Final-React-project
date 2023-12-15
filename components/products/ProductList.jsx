@@ -9,6 +9,7 @@ import { ScrollView } from 'react-native'
 
 
 const ProductList = () => {
+  const products =[1,2,3,4,5,6,7,8,9,10]
 
     const {data , isLoading , error} = useFetch()
     const [viewWidth, setViewWidth] = useState(0);
@@ -31,11 +32,15 @@ const ProductList = () => {
     <View onLayout={onLayout} style = {styles.container}  >
       <ScrollView horizontal={true} style={{ width: "100%" }}>
         <FlatList
-            data = {data}
+           
             numColumns={2}
-            renderItem={({item}) =>(<ProductCardView item = {item}/>)}
             contentContainerStyle={styles.containerContent}
             ItemSeparatorComponent={() => <View style={styles.seperator}/>}
+
+            data = {products}
+        //keyExtractor ={(item) => item._id}
+        renderItem={({item})=><ProductCardView/>}
+        
             
         />
     </ScrollView>
